@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>my resume</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <div id="wrapper">
+      <div id="taiji"></div>
+    </div>
+
+    <style id="sty"></style>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      div#demo {
+        word-break: break-all;
+        /* position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+      }
+      div#taiji {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      @media screen and (max-width: 500px) {
+        body {
+          color: blue;
+        }
+        div#demo {
+          height: 50vh;
+          overflow: auto;
+        }
+        div#wrapper {
+          height: 50vh;
+          position: relative;
+          top: 0;
+          right: 0;
+        }
+        div#taiji {
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    </style>
+    <script src="main1.js"></script>
+  </body>
+</html>
